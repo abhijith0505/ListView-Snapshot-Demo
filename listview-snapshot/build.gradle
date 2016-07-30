@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 2
+        versionName "1.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.1.1'
+}
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'ListViewSnapshot'
+
+    publishedGroupId = 'com.abhijith'
+    libraryName = 'ListViewSnapshot'
+    artifact = 'listview-snapshot'
+
+    libraryDescription = 'An android library that allows you to take snapshot of your entire listView.'
+
+    siteUrl = 'https://github.com/abhijith0505/Listview-Snapshot-Demo'
+    gitUrl = 'https://github.com/abhijith0505/Listview-Snapshot-Demo.git'
+
+    libraryVersion = '1.1'
+
+    developerId = 'Abhijith'
+    developerName = 'Abhijith'
+    developerEmail = 'abhijith4m0505@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
