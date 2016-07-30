@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
         ListViewSnapshot listViewSnapshot = new ListViewSnapshot(listView, getApplicationContext(), getBaseContext());
 
         //To set custom path to save the snapshot
-        String newPath = Environment.getExternalStorageDirectory()
+        /*String newPath = Environment.getExternalStorageDirectory()
                 + "/Android/data/"
                 + getApplicationContext().getPackageName()
                 + "/Files/NewPath";
         listViewSnapshot.renameSnapshot("newName");
 
-        listViewSnapshot.setPathtoSnapshot(newPath);
+        listViewSnapshot.setPathtoSnapshot(newPath);*/
 
         listViewSnapshot.convertWholeListViewItemsToSnapshot();
 
