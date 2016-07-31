@@ -20,6 +20,15 @@ To use the library, add the following dependency to your app level build.gradle 
 		 compile 'com.abhijith:listview-snapshot:1.+'
 		...
     }
+    
+    
+Add the permission required in your **Android Manifest**
+'''
+<manifest ...>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    ...
+</manifest>
+'''
 
 Use the library by making an object of the class **ListViewSnapshot**.
 
