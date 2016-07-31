@@ -26,9 +26,9 @@ Use the library by making an object of the class **ListViewSnapshot**.
     ListViewSnapshot listViewSnapshot = new ListViewSnapshot(listView, getApplicationContext(), getBaseContext());
 
 Parameters:
-1) The instance of ListView that has to be saved as a Snapshot.
-2) Application Context
-3) Base Context 
+- The instance of ListView that has to be saved as a Snapshot.
+- Application Context
+- Base Context 
 
 
 
