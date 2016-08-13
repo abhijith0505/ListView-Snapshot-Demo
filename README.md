@@ -1,7 +1,7 @@
 Listview-snapshot
 ======================
 
-[![Build Status](https://travis-ci.org/abhijith0505/Listview-snapshot.svg?branch=master)](https://travis-ci.org/abhijith0505/Listview-snapshot)	         &nbsp;&nbsp;	![contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![Build Status](https://travis-ci.org/abhijith0505/ListView-Snapshot-Demo.svg?branch=master)](https://travis-ci.org/abhijith0505/ListView-Snapshot-Demo)	         &nbsp;&nbsp;	![contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 
 A demo android application that uses the listview-snapshot android library.
 
@@ -22,15 +22,24 @@ To use the library, add the following dependency to your app level build.gradle 
 		 compile 'com.abhijith:listview-snapshot:1.+'
 		...
     }
+    
+    
+Add the permission required in your **Android Manifest**
+```
+<manifest ...>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    ...
+</manifest>
+```
 
 Use the library by making an object of the class **ListViewSnapshot**.
 
     ListViewSnapshot listViewSnapshot = new ListViewSnapshot(listView, getApplicationContext(), getBaseContext());
 
 Parameters:
-1) The instance of ListView that has to be saved as a Snapshot.
-2) Application Context
-3) Base Context 
+- The instance of ListView that has to be saved as a Snapshot.
+- Application Context
+- Base Context 
 
 
 
