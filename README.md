@@ -5,7 +5,7 @@ Listview-snapshot
 
 A demo android application that uses the listview-snapshot android library.
 
-Use this library to convert any listview into a image (Snapshot) and store it anywhere in your phone.
+Use this library to convert any listview into an image (snapshot) and store it anywhere in your phone.
 
 # Usage
 
