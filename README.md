@@ -74,12 +74,12 @@ Example:   List_30072016_123310.jpg
 
 
 
-#Screenshot
+# Screenshot
 
-![    ](screenshot.jpg?raw=true =100x)
+![    ](screenshot.jpg?raw=true)
 
 
-#License
+# License
 
     The MIT License (MIT)
 
