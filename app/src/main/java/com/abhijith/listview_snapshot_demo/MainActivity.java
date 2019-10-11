@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         your_array_list.add("pong");
         your_array_list.add("ping");
 
-
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
                 this,
                 android.R.layout.simple_list_item_1,
@@ -52,6 +51,5 @@ public class MainActivity extends AppCompatActivity {
         listViewSnapshot.setPathtoSnapshot(newPath);*/
 
         listViewSnapshot.convertWholeListViewItemsToSnapshot();
-
     }
 }
